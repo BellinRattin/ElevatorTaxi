@@ -1,0 +1,23 @@
+name: Package AddOn
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    name: packager
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1 # get the source tree
+
+      - name: Get the packager
+        run: |
+          curl -s https://raw.githubusercontent.com/BigWigsMods/packager/master/release.sh > ./release.sh
+          chmod 755 ./release.sh
+
+      - name: Create Retail Package
+        run: ./release.sh
+        env:
+         CF_API_KEY: ${{ secrets.CURSEFORGE }}
