@@ -2,6 +2,7 @@
 ## Title: Elevator Taxi
 ## Notes: Play "elevator music" on flight paths
 ## Author: BellinRattin
-## Version: 0.0.1
+## Version: 0.0.2
+## X-Curse-Project-ID: 400678
 
 ElevatorTaxi.lua

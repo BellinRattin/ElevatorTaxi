@@ -23,8 +23,3 @@ jobs:
         run: ./release.sh
         env:
          CF_API_KEY: ${{ secrets.CURSEFORGE }}
-         GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
-      - uses: actions/upload-artifact@master
-        with:
-          name: DynamicBoxerBuild-${{ github.sha }}
-          path: .release/
