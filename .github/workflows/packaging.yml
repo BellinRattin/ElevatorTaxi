@@ -22,4 +22,6 @@ jobs:
       - name: Create Retail Package
         run: ./release.sh
         env:
-         CF_API_KEY: ${{ secrets.CURSEFORGE }}
+         CF_API_KEY: ${{ secrets.CF_API_KEY }}
+         GITHUB_OAUTH: ${{ secrets.GITHUB_OAUTH }}
+         WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
