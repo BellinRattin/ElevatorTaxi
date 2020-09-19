@@ -4,6 +4,5 @@
 ## Author: BellinRattin
 ## Version: 0.0.2
 ## X-Curse-Project-ID: 400678
-## X-WoWI-ID: 25685
 
 ElevatorTaxi.lua
