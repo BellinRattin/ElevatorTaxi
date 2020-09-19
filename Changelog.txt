@@ -1,0 +1,7 @@
+ElevatorTaxi changelog 
+
+version 0.0.2 - 19 september 2020
+	fixed argus "teleporters" flightpaths 
+
+version 0.0.1 - 07 august 2020
+	first release
