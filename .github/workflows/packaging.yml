@@ -9,19 +9,15 @@ on:
 
 jobs:
   build:
-    name: packager
+
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v1 # get the source tree
-
-      - name: Get the packager
-        run: |
-          curl -s https://raw.githubusercontent.com/BigWigsMods/packager/master/release.sh > ./release.sh
-          chmod 755 ./release.sh
-
-      - name: Create Retail Package
-        run: ./release.sh
-        env:
-         CF_API_KEY: ${{ secrets.CF_API_KEY }}
-         GITHUB_OAUTH: ${{ secrets.GITHUB_OAUTH }}
-         WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
+    - uses: actions/checkout@v1
+      
+    - name: Create Retail Package
+      run: curl -s https://raw.githubusercontent.com/BigWigsMods/packager/master/release.sh | bash
+      env:
+        CF_API_KEY: ${{ secrets.CF_API_KEY }}
+        GITHUB_OAUTH: ${{ secrets.GITHUB_OAUTH }}
+        WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
