@@ -2,7 +2,7 @@
 ## Title: Elevator Taxi
 ## Notes: Play "elevator music" on flight paths
 ## Author: BellinRattin
-## Version: 0.0.2
+## Version: @project-version@
 ## X-Curse-Project-ID: 400678
 ## X-WoWI-ID: 25685
 
