@@ -1,3 +1,5 @@
 package-as: ElevatorTaxi
 
+enable-nolib-creation: no
+
 manual-changelog: Changelog.txt
